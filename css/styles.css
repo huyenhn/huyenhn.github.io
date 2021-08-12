@@ -46,7 +46,7 @@ background: -webkit-linear-gradient(#eee, #333);
   border-bottom-left-radius: 0;
 }
 .bubble.left {
-  background: linear-gradient(to right, #6152e0, #ef9f9f ) !important
+  background: linear-gradient(to right, #52a5e0, #9fa5ef ) !important
 }
 .bubble:after {
   background : linear-gradient(to right, #67b04e , #40bede);
