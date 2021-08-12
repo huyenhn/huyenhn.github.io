@@ -1,0 +1,85 @@
+:root { font-size: 1.125rem; }
+@media (min-width: 600px) { :root { font-size: 1.5rem; } }
+@media (min-width: 900px) { :root { font-size: 1.75rem; } }
+@media (min-width: 1200px) { :root { font-size: 2rem; } }
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #FFF;
+  overflow-x:hidden;
+}
+
+.gradient-text {
+background: -webkit-linear-gradient(#eee, #333);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.messages {
+  overflow: auto;
+  width: 100vw;
+  max-height: 100vh;
+  padding: 1rem .9rem;
+  font-size: 22.5px;
+}
+.bubble {
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 0 .125rem 0;
+  padding: .5rem .85rem;
+  line-height: 1.25rem;
+  border-radius: 1.25rem;
+  transform-origin: 0 100%;
+  vertical-align: middle;
+  transition: border-radius .25s ease-out .075s;
+}
+.bubble.left.cornered {
+  border-bottom-left-radius: 0;
+}
+.bubble.left {
+  background: linear-gradient(to right, #6152e0, #ef9f9f ) !important
+}
+.bubble:after {
+  background : linear-gradient(to right, #67b04e , #40bede);
+  padding: 20px;
+  position: relative;
+  font-family: sans-serif;
+  letter-spacing: 0.8px;
+  color: #fff;
+  line-height: 20px;
+  width: 100%;
+    -webkit-clip-path: polygon(100% 0, 100% 92%, 74% 92%, 70% 100%, 66% 92%, 0 92%, 0 0);
+  clip-path: polygon(100% 0, 100% 92%, 74% 92%, 70% 100%, 66% 92%, 0 92%, 0 0);
+}
+.bubble.cornered:after {
+  background-position: 0 0;
+}
+.bubble span {
+  display: block;
+}
+.bubble span.message {
+  opacity: 0;
+  color: white;
+}
+.bubble a {
+  color: #0076FF;
+}
+.bubble .loading {
+  position: absolute;
+  width: 2.25rem;
+  font-size: 2rem;
+  line-height: 1rem;
+}
+.bubble .loading b {
+  display: inline-block;
+  color: white;
+}
