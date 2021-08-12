@@ -19,7 +19,7 @@ window.onload = function() {
     var messages = [
 	  sayHello(),
       'This is Ngoc Huyen - a friendly and supportive Technical Recruiter who has a mission to match people with their right careers.',
-      'Currently I am a Talent Acquisition at Athena Studio - a multinational mobile gamming company.',
+      'Currently I am a Talent Acquisition at Athena Studio - a multinational mobile gaming company.',
       'I would love to share our job openning here at Athena, please take a look at our <a target="_blank" href="https://athenastudio.bamboohr.com/jobs/">Career Job Site</a>.',
       'Curious and want to get more details? Feel free to book an e-meeting with me via <a target="_blank" href="https://calendly.com/huyenhn">My Calendar</a>. ',
       'Or you can also ping me on <a target="_blank" href="https://join.skype.com/invite/NSrrfurHHQ1R">Skype</a> or <a target="_blank" href="https://www.linkedin.com/in/ngoc-huyen-b9511a148/">LinkedIn</a>.',
